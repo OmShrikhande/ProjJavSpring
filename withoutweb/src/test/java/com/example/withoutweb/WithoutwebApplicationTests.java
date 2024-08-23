@@ -10,4 +10,3 @@ class WithoutwebApplicationTests {
 	void contextLoads() {
 	}
 
-}

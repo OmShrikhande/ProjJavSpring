@@ -9,5 +9,3 @@ class WithoutwebApplicationTests {
 	@Test
 	void contextLoads() {
 	}
-
-}

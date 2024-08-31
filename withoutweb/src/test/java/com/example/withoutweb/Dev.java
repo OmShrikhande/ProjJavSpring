@@ -1,6 +1,7 @@
 package com.example.withoutweb;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Component;
 
 @Component
@@ -31,9 +32,9 @@ public class Dev {
 
      */
 
-
     //(Day4)
     @Autowired
+    @Qualifier("desktop") // when there is 2 files with the @component and no file we want to make primary and both file have implemented same method, or we can say both has same type
     private Computer computer;
 
     public void build(){

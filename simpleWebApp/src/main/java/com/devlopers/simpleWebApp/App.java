@@ -7,8 +7,8 @@ public class App
 {
     public static void main( String[] args )
     {
-    	ApplicationContext context = new ClassPathXmlApplicationContext("Spring.xml");
-        Dev obj = context.getBean(Dev.class);
+    	ApplicationContext context = new ClassPathXmlApplicationContext("spring.xml");
+        Dev obj = (Dev)context.getBean("dev");
         
         obj.build();
     }

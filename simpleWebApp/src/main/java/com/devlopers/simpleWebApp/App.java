@@ -1,13 +1,15 @@
 package com.devlopers.simpleWebApp;
 
-/**
- * Hello world!
- *
- */
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+
 public class App 
 {
     public static void main( String[] args )
     {
-        System.out.println( "Hello World!" );
+    	ApplicationContext context = new ClassPathXmlApplicationContext("Spring.xml");
+        Dev obj = context.getBean(Dev.class);
+        
+        obj.build();
     }
 }

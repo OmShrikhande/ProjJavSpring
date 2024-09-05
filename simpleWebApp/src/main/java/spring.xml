@@ -5,7 +5,9 @@
 
 
 	
-	<bean id="dev" class="com.devlopers.simpleWebApp.Dev"> </bean>
+	<bean id="dev" class="com.devlopers.simpleWebApp.Dev"> 
+		<property name="age" value="19"/>
+	</bean>
 	
 	<bean id="laptop" class="com.devlopers.simpleWebApp.Laptop"> </bean>
 
